@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>感情識別会話アプリ 感情グラフ</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Delius+Unicase" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Salsa" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quattrocento+Sans" />
+<link rel="stylesheet" href="Library/font-awesome-4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Library/jqueryUI/jquery-ui.min.css">
+<link rel="stylesheet" href="Library/font-awesome-4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+<link rel="stylesheet" href="Library/shake.css">
+
+<script src="Library/jquery-1.11.3.min.js"></script>
+<script src="Library/jqueryUI/jquery-ui.min.js"></script>
+<script src="Library/ja_datepicker.js"></script>
+
+<script type="text/javascript" src="Library/fusioncharts-jquery-plugin-master/package/fusioncharts.js"></script>
+<script type="text/javascript" src="Library/fusioncharts-jquery-plugin-master/package/fusioncharts-jquery-plugin.js"></script>
+<script type="text/javascript" src="Library/fusioncharts-jquery-plugin-master/src/fusioncharts-jquery-plugin.js"></script>
+<script type="text/javascript" src="Library/fusioncharts-jquery-plugin-master/src/themes/fusioncharts.theme.fint.js"></script>
+
+</head>
+<body class="bodyContainer">
+
+	<div class="body-header">
+		<div class="headerText"> 感情識別会話アプリ 感情グラフ </div>
+
+		<div class="total"></div>
+
+		<div class="DateRange-Display-Container">
+			<div class="displayRange"> 表示</div>
+			<div class="DateRange"> 
+				<div class="startRangeDiv">
+					<input class="startRange" readonly></input>
+				</div>
+				<span> ~ </span>
+				<div class="endRangeDiv">
+					<input class="endRange" readonly></input> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="chart"> 
+		<div class="chartContainer">
+			<div id="chart-container"></div>
+		</div>
+	</div>
+
+ <script src="js/function.js"></script>
+ <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

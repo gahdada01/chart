@@ -1,0 +1,455 @@
+
+
+/* Default styles first then media queries */
+@media all and (min-width: 400px)  {}
+@media all and (min-width: 600px)  {}
+@media all and (min-width: 1000px) {}
+@media all and (min-width: 1400px) {}
+
+
+
+@media (max-width: 800px) {
+    .headerText {    
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+    .body-header {
+        padding-left: 0px !important;
+    }
+
+    .DateRange-Display-Container {
+        float: none !important;
+        margin: 12px auto 0 auto !important;
+        width: 316px;
+        height: 29px;
+    }
+
+    .DateRange {
+        margin: -1px 15px 0px 0 !important;
+    }
+
+   .total {
+        float: none !important;
+        margin: 10px auto 0 auto !important;
+    }
+  
+}
+
+
+
+html {
+    margin:0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+/*    min-width: 900px; */
+    min-height: 500px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+.chart {
+    height: 100%;
+}
+
+#chart-container {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    height: calc(100% - 100px);
+
+}
+.chartContainer {
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    height: calc(100% - 100px);
+
+}
+
+g[class*="TB_MASTER2"] {
+	display: none;
+}
+g[class*="creditgroup"] {
+	display: none;
+}
+
+.button {
+    width: 700px;
+}
+
+.buttonName {
+	float: left;
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 240px;
+    background: #f3f3f3;
+    margin: auto;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.disableclick {
+	z-index: 500;
+    background: rgba(0, 0, 0, 0.1) !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-width: 1000px;
+}
+
+.active {
+	display: block;
+}
+
+
+.inactive{
+    display: none;
+}
+
+
+
+select:focus {
+    outline: none;
+}
+
+.submit{
+    text-align: center;
+    margin: 40px 10px 10px 146px;
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 110px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 6px 0 0 0;
+    color: #ccc;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.submit:hover {
+    border-color: #595a5a;
+    color: #595a5a;
+}
+
+select.ui-datepicker-month:focus, select.ui-datepicker-year:focus {
+    outline: none;
+}
+
+.xClose {
+    float: right;
+}
+
+.month-year-title {
+    margin: 30px 0 0 118px;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span.month-title {
+    margin: 0 8px 0 -19px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span.Year-year-title {
+    margin: 0 0 0 47px;
+}
+
+select:hover {
+    border-color: #595a5a;
+}
+
+i.fa.fa-times {
+    margin: 10px 10px 10px 10px;
+    color: #cdcdcd;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i.fa.fa-times:hover {
+    color: #595a5a;
+}
+
+
+.MYSelector, .YearSelector {
+    margin: 70px 10px 10px 10px;
+    text-align: center;
+}
+
+select {
+    width: 100px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 49px;
+   /* -webkit-appearance: none;
+    -moz-appearance: none;*/
+    cursor: pointer;
+}
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    margin: 10px 0 0 60px;
+}
+
+.body-header {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 4px 50px -5px #b3b3b3;
+    border-bottom: 2px solid #cccccc;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #5F7782;
+    padding-left: 50px;
+    position: relative;
+}
+
+.headerText {
+    width: 258px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5F7782;
+}
+
+
+.dropDownContainer {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 10px 50px 0px 0px;
+}
+
+#dropdown-content {
+    display: none ;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    text-align: center;    
+    font-size: 11px;
+}
+
+#dropdown-content a {
+    color: #656565;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropDownContainer:hover #dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    color: white;
+    background-color: #afafaf;
+    border: none !important;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    color: white;
+    background-color: #cccccc;
+    border: none !important;
+}
+
+.dropDownContainer:hover .dropbtn{
+    color: white;
+    background-color: #cccccc;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.dropbtn:focus {
+    outline: none;
+}
+
+.total {
+    float: right;
+    margin: 20px 40px 0 0;
+    width: 130px;
+    text-align: center;
+}
+
+span#totalSpan {
+    color: #0075c2;
+} 
+div#total {
+    font-size: 12px;
+}
+
+.DateRange {
+    float: right;
+    margin: 0 15px 0 0;
+}
+
+.displayRange {
+    float: right;
+    background-color: #1b93e2;
+    padding: 5px 20px 5px 20px;
+    border-radius: 3px;
+    color: #ececec;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.displayRange:hover {
+    background-color: #44aff5;
+    color: #ffffff;
+}
+
+input.endRange:focus, input.startRange:focus {
+    outline: none;
+    border: 2px solid #b9b9b9;
+    color: #9c9c9c;
+}
+
+input.endRange:hover, input.startRange:hover {
+    border: 2px solid #d2d1d1;
+    color: #9c9c9c;
+}
+
+.endRange, .startRange {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #cccccc;
+    padding: 5px 0px 5px 0px;
+    width: 100px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.endRange:hover, .startRange:hover {
+    color: #9c9c9c;
+}
+
+.DateRange-Display-Container {
+    margin: 12px 7px 0px 0px;
+    float: right;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background-color: #35adfd;
+}
+
+.ui-datepicker-title {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+table.ui-datepicker-calendar {
+    color: #adadad;
+}
+
+span {
+    font-weight: normal;
+}
+
+img {
+    margin: 56px 0 0 0;
+}
+
+.loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    width: 400px;
+    height: 254px;
+    margin: auto;
+    z-index: 100;
+    border-radius: 5px;
+    min-width: 1000px;
+    min-height: 500px;
+}
+
+img {
+    margin: 190px 0 0 0;
+}
+
+.error , input.error.startRange:hover, input.error.endRange:hover, input.error.startRange:focus, input.error.endRange:focus {
+    color: tomato;
+}
+
+.DateRange span {
+    float: left;
+    padding: 7px 9px 0px 10px;
+}
+
+.endRangeDiv {
+    float: right;
+}
+.startRangeDiv {
+    float: left;
+}
+
+.errorDisplay {
+    color: tomato;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.errorSign {
+    font-size: 140px;
+    padding: 150px 0px 0px 0px;
+    color: red;
+    opacity: .1;
+}
+
+.errorDisplaySign {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img#loadingCompute {
+    margin: -5px 0px -5px 7px;
+    height: 19px;
+    width: 28px;
+}
+
+div#computing {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
